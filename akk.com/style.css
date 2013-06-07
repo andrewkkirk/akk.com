@@ -354,14 +354,15 @@ video {
 	margin-left: auto;
 	margin-right: auto;
 }
-.entry-content img,
+
 .comment-content img,
 .widget img,
 img.header-image,
 .author-avatar img,
-img.wp-post-image {
-	/* Add fancy borders to all WordPress-added images but not things like badges and icons and the like */
-	border-radius: 3px;
+img.wp-post-image,
+img.fancy {
+	/* Add fancy borders to WordPress-added images and class="fancy" but not things like badges and icons and the like */
+	border-radius: 2px;
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 .wp-caption {
@@ -675,7 +676,6 @@ footer .site-info {
 	margin-left: auto;
 	margin-right: auto;
 }
-
 footer[role="contentinfo"] a {
 	color: #686868;
 }
@@ -688,29 +688,60 @@ footer[role="contentinfo"] a:hover {
 section h2 {
 	font-size: 30px !important;
 	font-size: 2.142857143rem !important;
-	margin: 0 !important;
+	margin: 0px !important;
 	}
-
 section h3 {
 	font-size: 16px !important;
 	font-size: 1.142857143rem !important;
   font-weight: normal;
-	margin-top: 0px !important;
+	line-height: 14px !important;
+	line-height: 1rem !important;
+  margin-top: 0px !important;
   margin-bottom: 30px !important;
   margin-bottom: 2.142857143rem !important;
 	}
-
-section#learn-code {
-	background-color: #7ec9ac;
-	}
-
-section#FaceTheBuzz {
-	background-color: #f3f3e9;
-	}
-
 .highlight p {
 	text-align: left;
 }
+.highlight a {
+	text-decoration: none;
+}
+
+/* Learn Code */
+section#learn-code {
+	background-color: #7ec9ac;
+	color: #357f63;
+	}
+section#learn-code h2 {
+			color: white;
+	}
+section#learn-code a {
+			color: #C4242D;
+	}
+
+/* CitySourced */
+section#citysourced {
+	background-color: #7293BD;
+	color: #C8D5E5;
+	}
+section#citysourced h2 {
+			color: #f3f3e9;
+	}
+section#citysourced a {
+			color: #101C2C;
+	}
+
+/* FACE THE BUZZ */
+section#FaceTheBuzz {
+	background-color: #9EADB8;
+	color: #f3f3e9;
+	}
+section#FaceTheBuzz h2 {
+			color: #2F424E;
+	}
+section#FaceTheBuzz a {
+			color: #0f3647;
+	}
 
 /* =Main content and comment content
 -------------------------------------------------------------- */
