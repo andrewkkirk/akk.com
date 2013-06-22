@@ -440,11 +440,6 @@ img.wp-smiley,
 	text-align: right;
 	width: 50%;
 }
-.nav-single + .comments-area,
-#comment-nav-above {
-	margin: 48px 0;
-	margin: 3.428571429rem 0;
-}
 
 /* Author profiles */
 .author .archive-header {
@@ -538,7 +533,7 @@ a:hover {
 
 /* Header */
 .site-header {
-	background-image: url(http://www.andrewkkirk.com/wp-content/uploads/2012/10/grid.png);
+	background-image: url(/wp-content/uploads/2012/10/grid.png);
 	padding: 24px 0 14px;
 	padding: 1.714285714rem 0 1rem;
 }
@@ -779,6 +774,12 @@ section#FaceTheBuzz a {
 	line-height: 1.846153846;
 	color: #757575;
 }
+
+/* Remove entry header title from pages, but not posts */
+.type-page .entry-header {
+	display: none;
+}
+
 .comments-link a,
 .entry-meta a {
 	color: #757575;
@@ -1021,6 +1022,12 @@ img.aligncenter {
 	-moz-hyphens: auto;
 	hyphens: auto;
 }
+/* Remove bottom spacing on home page only */
+.home .site-content article {
+	margin-bottom: 0 !important;
+	padding-bottom: 0 !important;
+}
+
 .page-links {
 	clear: both;
 	line-height: 1.714285714;
@@ -1032,6 +1039,10 @@ footer.entry-meta {
 	font-size: 0.928571429rem;
 	line-height: 1.846153846;
 	color: #757575;
+}
+/* Remove bottom spacing on home page only */
+.home footer.entry-meta {
+	margin-top: 0 !important;
 }
 .single-author .entry-meta .by-author {
 	display: none;
@@ -1668,7 +1679,7 @@ img#wpstats {
 		box-shadow: none;
 	}
 
-	.site-content .row {
+	.site-content .row, .type-post, .comments-area, .nav-single {
 		margin: 0 auto;
 		max-width: 600px;
 		max-width: 42.857142857rem;
