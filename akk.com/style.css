@@ -478,8 +478,8 @@ html {
 	font-size: 87.5%;
 }
 body {
-	font-size: 14px;
-	font-size: 1rem;
+	font-size: 18px;
+	font-size: 1.285714286rem;
 	font-family: Helvetica, Arial, sans-serif;
 	text-rendering: optimizeLegibility;
 	color: #444;
@@ -697,6 +697,10 @@ section h3 {
 	}
 .highlight p {
 	text-align: left;
+	   word-wrap: normal;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+   hyphens: none;
 }
 .highlight a {
 	text-decoration: none;
@@ -863,7 +867,7 @@ article.sticky .featured-post {
 .mu_register p {
 	margin: 0 0 24px;
 	margin: 0 0 1.714285714rem;
-	line-height: 1.714285714;
+	line-height: 1.55;
 }
 .entry-content ol,
 .comment-content ol,
@@ -1679,7 +1683,7 @@ img#wpstats {
 		box-shadow: none;
 	}
 
-	.site-content .row, .type-post, .comments-area, .nav-single {
+	.site-content .row, .type-post, .comments-area, .nav-single, #disqus, div[id^="disqus"] {
 		margin: 0 auto;
 		max-width: 600px;
 		max-width: 42.857142857rem;
@@ -1690,6 +1694,10 @@ img#wpstats {
 		padding: 75px 15px;
 		padding: 5.357142857rem 1.071428571rem;
 		text-align: center;
+	}
+	section.highlight:first-child {
+		padding: 45px 15px 75px;
+		padding: 3.214285713rem 1.071428571rem 5.357142857rem ;
 	}
 }
 
